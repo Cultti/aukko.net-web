@@ -1,3 +1,5 @@
+require('jquery');
+
 $(document).ready(() => {
     setTimeout(() => {
         $('#header').addClass('loaded');
