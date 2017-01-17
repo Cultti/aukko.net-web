@@ -1,14 +1,14 @@
 require('jquery');
 
-$(document).ready(() => {
-    setTimeout(() => {
+$(document).ready(function () {
+    setTimeout(function () {
         $('#header').addClass('loaded');
 
-        setTimeout(() => {
+        setTimeout(function () {
             $('#content').addClass('loaded');
 
-            let timeout = 300;
-            $('#content h2, #content p').each((i, elem) => {
+            var timeout = 300;
+            $('#content h2, #content p').each(function (i, elem) {
                 showElemTimeout(elem, timeout * i);
             });
         }, 2000)
@@ -16,7 +16,7 @@ $(document).ready(() => {
 });
 
 function showElemTimeout(elem, timeout) {
-    setTimeout(() => {
+    setTimeout(function () {
         $(elem).addClass('loaded');
     }, timeout)
 }
