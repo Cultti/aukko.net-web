@@ -45,6 +45,32 @@
             </div>
         </div>
 
+        <!-- modal for ruuvitag -->
+        <div id="beaconModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- You are cheating.. go find the tag! -->
+                    <h1>You found me!</h1>
+                    <p>You have found my <a href="https://ruuvitag.com/" target="_blank">ruuvitag</a>.</p>
+                    <h2>What is this?</h2>
+                    <p>There is a small beacon in your proximity that transmits eddystone beacon signal. Maybe you know this because you have enabled this feature in your bluetooth device...</p>
+                    <h2>Where is it?</h2>
+                    <p>The beacon is located in my car. The car is Volvo V40 year 2017 model and plate number is <b>FMK-677</b>. Try spot it and leave a note!</p>
+                    <br />
+                    <p>For more information about me, close this modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
         <script src="scripts/bundle.min.js"></script>
     </body>
 </html>

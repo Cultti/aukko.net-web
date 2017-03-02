@@ -1,4 +1,5 @@
 require('jquery');
+require('bootstrap');
 
 $(document).ready(function () {
     setTimeout(function () {
@@ -13,6 +14,12 @@ $(document).ready(function () {
             });
         }, 2000)
     }, 500);
+
+    if(window.location.hash && window.location.hash === "#beacon") {
+        console.log('Congratulations! You have found my ruuvitag beacon or messing with my site...');
+
+        $('#beaconModal').modal('show')
+    }
 });
 
 function showElemTimeout(elem, timeout) {
